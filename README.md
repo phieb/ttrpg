@@ -21,7 +21,7 @@ ttrpg/
 │   └── tools/
 │       └── generate_character_pdf.py ← Charakterblatt PDFs + Gemini Prompts
 └── adventures/
-    ├── _template/                    ← Vorlage für neues Abenteuer (kopieren!)
+    ├── _template/                    ← Vorlage (wird automatisch von Claude genutzt)
     │   └── CLAUDE.md
     └── [abenteuer-name]/             ← ein Ordner pro Abenteuer
         ├── CLAUDE.md
@@ -34,19 +34,14 @@ ttrpg/
             └── [name]_portrait_prompt.txt
 ```
 
-## Neues Abenteuer starten
-
-```bash
-cp -r adventures/_template adventures/mein_abenteuer
-cd adventures/mein_abenteuer
-# Claude Code öffnen und sagen: "Starte Session 0"
-```
-
 ## Spielen
 
-Claude Code im Abenteuer-Ordner öffnen und sagen:
-- `Starte Session 0` — Weltenbau und Charaktererstellung
-- `Weiterspielen` — Abenteuer fortsetzen
+Claude Code im **Root-Ordner** (`ttrpg/`) öffnen — Claude zeigt automatisch ein Menü:
+
+- Laufende Abenteuer mit Status und letzter Szene
+- Option: **Neues Abenteuer starten**
+
+Von dort alles auswählen — kein manuelles Kopieren von Ordnern, kein `cd` nötig.
 
 ## Während dem Spiel
 
