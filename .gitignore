@@ -1,0 +1,26 @@
+# Echte Abenteuerdaten — niemals committen
+/adventures/*/
+!/adventures/_template/
+
+# Spieler-YAMLs (enthalten Telefonnummern)
+/players/*.yaml
+!/players/example.yaml
+
+# Laufzeit-Status (enthält echte Gruppen-IDs und Spielernamen)
+/status.yaml
+
+# Generierte Dateien
+*.png
+*.pdf
+*.jsonl
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Windows-Artefakte
+*.Zone.Identifier
+
+# Claude Code lokale Settings
+.claude/

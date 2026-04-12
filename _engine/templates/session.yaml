@@ -1,0 +1,38 @@
+# Session-Zustand
+
+status: session_0  # session_0 / aktiv / pausiert / abgeschlossen
+
+abenteuer_name: ""
+session_nummer: 0
+
+aktueller_ort: ""
+letzte_szene: ""  # kurze Zusammenfassung wo die Gruppe gerade ist
+
+aktive_quests:
+  - name: ""
+    beschreibung: ""
+    status: offen  # offen / in_bearbeitung / abgeschlossen / gescheitert
+    hinweise: []
+
+seitenquests: []
+
+history: []  # komprimierte ältere Ereignisse
+  # Format: "Session X: [kurze Zusammenfassung]"
+
+nsc_status: {}
+  # Format:
+  # taverne_wirt:
+  #   beziehung: neutral
+  #   letzter_kontakt: "Spieler haben ihm geholfen"
+
+spieler_status: {}
+  # Format:
+  # phieb:
+  #   zustaende: []
+  #   gegenstaende: []
+
+letzte_ereignisse: []
+  # Die letzten 5-10 Spielzüge — wird nach ~20 Zügen komprimiert
+  # Format: "- [Kurze Beschreibung was passiert ist]"
+
+spielprotokoll_datei: "spielprotokoll.md"  # Optionales volles Protokoll

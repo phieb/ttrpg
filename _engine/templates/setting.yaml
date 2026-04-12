@@ -1,0 +1,25 @@
+# Setting-Vorlage — wird in Session 0 ausgefüllt
+
+name: ""
+stimmung: ""  # düster / episch / humorvoll / mysteriös / gemischt
+
+welt:
+  typ: ""  # Fantasy / Steampunk / Horror / historisch / eigenes Setting
+  beschreibung: ""  # 2-3 Sätze Weltbeschreibung
+  besonderheiten: []  # Was macht diese Welt einzigartig?
+
+magie:
+  existiert: true
+  wie_funktioniert_sie: ""
+
+konflikt:
+  hauptbedrohung: ""
+  hintergrund: ""
+  bekannte_fraktionen: []
+
+startort:
+  name: ""
+  beschreibung: ""
+  atmosphaere: ""
+
+aktuelle_lage: ""

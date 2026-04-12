@@ -1,0 +1,14 @@
+# status.yaml — Übersicht aller aktiven Abenteuer
+# Diese Datei wird vom Signal-Bot gelesen (ttrpg-signal).
+# → Kopiere diese Datei als status.yaml und trage echte Werte ein.
+
+abenteuer:
+  - ordner: mein_abenteuer            # Ordnername unter adventures/
+    name: "Mein Erstes Abenteuer"
+    signal_gruppe: ""                 # Signal-Gruppen-ID (wird von !neu gesetzt)
+    spieler:
+      - name: MaxMustermann           # muss zu players/[name].yaml passen
+        charakter: ""                 # wird nach Session 0 befüllt
+    status: setup                     # setup | session_0 | aktiv | pausiert
+    letzte_szene: ""
+    zuletzt_gespielt: ""

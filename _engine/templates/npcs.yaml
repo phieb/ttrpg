@@ -1,0 +1,13 @@
+# NSC-Vorlage
+
+npcs:
+  - name: ""
+    rolle: ""  # z.B. "Tavernenwirt", "Antagonist", "Verbündeter"
+    aussehen: ""
+    persoenlichkeit: ""
+    sprechweise: ""  # Besondere Sprachmerkmale, Manierismen
+    agenda: ""  # Was will dieser NSC wirklich?
+    beziehung_zu_spielern: ""
+    bekannte_informationen: []
+    geheimnisse: []
+    status: aktiv  # aktiv / tot / unbekannt / verbündet / feindlich

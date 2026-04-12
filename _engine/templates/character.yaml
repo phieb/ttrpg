@@ -1,0 +1,36 @@
+# Charakterblatt
+# Wird in Session 0 gemeinsam erarbeitet
+
+charakter:
+  name: ""
+  gespielt_von: ""  # echter Name des Spielers
+
+identitaet:
+  wer_bist_du: ""       # In 1-2 Sätzen — nicht Klasse/Rasse, sondern Persönlichkeit
+  aussehen: ""
+  alter: ""
+  herkunft: ""
+
+skills:
+  - name: ""
+    beschreibung: ""    # Was kann dieser Charakter, was andere nicht können?
+  # 4-6 narrative Skills, vom DM in Session 0 abgeleitet
+
+motivation:
+  will: ""              # Was treibt diesen Charakter an?
+  fuerchtet: ""         # Was hält ihn zurück oder macht ihm Angst?
+  geheimnis: ""         # Optional — etwas das die anderen nicht wissen
+
+beziehungen:
+  begleiter: ""         # Beziehung zum anderen Spielercharakter
+  nscs: []              # Wird im Laufe des Spiels befüllt
+
+zustand:
+  # Wird während des Spiels aktualisiert
+  verletzt: false
+  erschoepft: false
+  notizen: ""
+
+imagen_prompt: ""
+# Gemini Imagen 3 Prompt für Charakterportrait
+# Format: "Portrait of [character description], [art style], [mood], [details]"

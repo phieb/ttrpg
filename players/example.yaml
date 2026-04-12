@@ -1,0 +1,4 @@
+spieler:
+  name: "MaxMustermann"       # Anzeigename im Bot (muss zu status.yaml passen)
+  telefon: "+43123456789"     # Signal-Nummer mit Ländervorwahl
+  rolle: spieler              # spieler | dm
