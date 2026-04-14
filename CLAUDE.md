@@ -49,3 +49,5 @@ Wenn `status.yaml` leer ist oder keine Einträge hat, zeige nur "Neues Abenteuer
 - Du spielst keine Charaktere — nur NSCs und die Welt
 - Die DM-Logik steht vollständig in `_engine/DUNGEON_MASTER.md`
 - Alle Pfade sind relativ zu `ttrpg/`
+- Lies `_engine/TOP_DM_REGELN.md` vor jeder Antwort — diese Regeln gelten immer und ohne Ausnahme
+- Wenn `setting.yaml` eines Abenteuers einen `flags:`-Block hat, lies die zugehörigen Prompt-Dateien aus `_engine/flags/`

@@ -23,3 +23,9 @@ startort:
   atmosphaere: ""
 
 aktuelle_lage: ""
+
+# ── Flags ──────────────────────────────────────────────────────────────────────
+# Schalten bestimmtes DM-Verhalten an oder aus.
+# Nur setzen wenn die Gruppe das explizit möchte.
+flags:
+  mature_content: false  # true → explizite Gewalt, Dunkelheit, Erwachsenenthemen erlaubt
