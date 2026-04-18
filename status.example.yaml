@@ -5,10 +5,12 @@
 abenteuer:
   - ordner: mein_abenteuer            # Ordnername unter adventures/
     name: "Mein Erstes Abenteuer"
-    signal_gruppe: ""                 # Signal-Gruppen-ID (wird von !neu gesetzt)
+    signal_gruppe: ""                 # Signal-Gruppen-ID der Spielgruppe (wird von !neu gesetzt)
     spieler:
       - name: MaxMustermann           # muss zu players/[name].yaml passen
-        charakter: ""                 # wird nach Session 0 befüllt
+        charakter: ""                 # wird nach Character Setup befüllt
+        setup_status: invited         # invited | ready  (wird von !invite / CHARACTER_SETUP gesetzt)
+        private_gruppe: ""            # Signal-Gruppen-ID des privaten Setup-Kanals (1:1 DM ↔ Spieler)
     status: setup                     # setup | session_0 | aktiv | pausiert
     letzte_szene: ""
     zuletzt_gespielt: ""

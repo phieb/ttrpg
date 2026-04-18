@@ -31,6 +31,16 @@ zustand:
   erschoepft: false
   notizen: ""
 
+praeferenzen:
+  # Gesammelt im privaten Setup-Kanal — nur für den DM sichtbar
+  no_gos: []          # Themen die im Spiel nicht vorkommen dürfen
+  wishes: []          # Themen die der Spieler aktiv erleben möchte
+  # Erweiterte Felder wenn mature_content Flag aktiv:
+  # mature_content_grenzen: []
+  # Erweiterte Felder wenn booktok Flag aktiv:
+  # booktok_no_gos: []
+  # booktok_wishes: []
+
 imagen_prompt: ""
 # Gemini Imagen 3 Prompt für Charakterportrait
 # Format: "Portrait of [character description], [art style], [mood], [details]"
