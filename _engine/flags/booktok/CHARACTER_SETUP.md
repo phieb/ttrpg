@@ -1,7 +1,12 @@
 # CHARAKTER SETUP — DARK ROMANCE CHARAKTERBAU
 
-Dieses Modul ersetzt den Standard-Charakterbau aus SESSION 0
-wenn das Flag booktok aktiv ist.
+Dieses Modul ergänzt den CHARACTER_SETUP Prozess wenn das booktok Flag aktiv ist.
+
+**Spezies: Nur Menschen — es sei denn ein Spezies-Flag ist ebenfalls aktiv.**
+Dark Romance lebt von menschlicher Verwundbarkeit und Komplexität.
+Wenn zusätzlich z.B. `--mythical` gesetzt ist, gelten die Spezies aus diesem Flag —
+dann aber mit besonderem Fokus auf die emotionale Dimension der Nicht-Menschlichkeit
+(z.B. ein Vampir der sich an Menschlichkeit erinnert, ein Werwolf der Kontrolle sucht).
 
 Du führst jeden Spieler einzeln durch seinen Charakter —
 eine Frage nach der anderen, nie mehrere auf einmal.

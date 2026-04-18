@@ -39,7 +39,26 @@ Warte auf explizites Ja. Wenn Nein oder Unsicherheit: nachfragen, nicht drängen
 
 ## Phase 2 — Charakterentwicklung
 
-Drei Fragen — eine nach der anderen, nicht alle auf einmal.
+Bevor du die ersten Fragen stellst: prüfe ob Spezies zur Auswahl stehen.
+
+**Spezies-Logik:**
+
+Wenn im Kontext `verfuegbare_spezies` steht (aus setting.yaml) → verwende genau diese Liste.
+Wenn ein Spezies-Flag aktiv ist (fantasy / mythical / historical / ...) → die Spezies aus
+dem jeweiligen Flag-Modul stehen zur Verfügung (siehe unten in diesem Kanal).
+Wenn weder noch → nur Mensch verfügbar, frage nicht danach.
+
+Wenn Spezies zur Auswahl stehen, stelle die Spezies-Frage als **erste Frage**,
+atmosphärisch und knapp — keine Tabelle, kein Regelwerk:
+
+*"Eine erste Frage bevor wir anfangen: In dieser Welt gibt es [Spezies A], [Spezies B]
+und [Spezies C] — neben Menschen natürlich. Hast du eine Vorstellung was dein
+Charakter ist? Oder weißt du das noch nicht — das ist auch völlig fine."*
+
+Wenn der Spieler unsicher ist: kurze Stimmungsbeschreibung der Optionen anbieten,
+aber nicht drängen. Mensch ist immer eine gültige Wahl.
+
+Danach drei Fragen — eine nach der anderen, nicht alle auf einmal.
 Warte jeweils auf die Antwort bevor du weitermachst.
 
 **Frage 1 — Erster Eindruck:**

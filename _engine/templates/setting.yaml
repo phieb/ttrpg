@@ -24,6 +24,12 @@ startort:
 
 aktuelle_lage: ""
 
+# ── Spezies ────────────────────────────────────────────────────────────────────
+# Optional — überschreibt die Spezies-Liste der aktiven Flags.
+# Leer lassen um die Flag-Defaults zu verwenden.
+# Beispiel: ["Mensch", "Elf", "Vampir"]
+verfuegbare_spezies: []
+
 # ── Flags ──────────────────────────────────────────────────────────────────────
 # Schalten bestimmtes DM-Verhalten an oder aus.
 # Nur setzen wenn die Gruppe das explizit möchte.
