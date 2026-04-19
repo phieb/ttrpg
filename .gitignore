@@ -17,6 +17,9 @@
 # API-Nutzungs-Tracking (Laufzeitdaten)
 usage.json
 
+# Bug-Reports (lokal, nicht committen)
+bugreports.md
+
 # Python
 __pycache__/
 *.pyc
