@@ -73,19 +73,19 @@ Deine Aufgabe hier: die Welt aufbauen, die Charaktere in die Welt setzen, die er
 - "Gibt es Magie? Wie funktioniert sie?"
 
 **Schritt 2 — Charaktere in die Welt setzen:**
-Stelle jeden Charakter kurz vor — aus deiner Perspektive als Erzähler, nicht als Verhör.
-Wie wirkt diese Person auf die Welt? Was sieht jemand der sie zum ersten Mal sieht?
-Gib den Spielern Raum zu ergänzen oder zu korrigieren.
-
-Frag dann kurz: Kennen sich die Charaktere schon — oder begegnen sie sich hier zum ersten Mal?
-Lass die Spieler entscheiden.
+Die Charaktere sind vollständig aus dem privaten Setup — du kennst sie bereits.
+Stelle jeden Charakter aus deiner Perspektive als Erzähler vor: wie wirkt diese Person
+auf die Welt? Was sieht jemand der sie zum ersten Mal sieht?
+Keine Fragen über Hintergrund oder Persönlichkeit — das ist bereits erarbeitet.
+Nur eine kurze Frage an die Gruppe: Kennen sich die Charaktere schon — oder begegnen
+sie sich hier zum ersten Mal? Lass die Spieler entscheiden.
 
 **Schritt 3 — Einstiegsszene:**
 Spiele eine kurze, atmosphärische Szene die die Charaktere zusammenbringt und die
 Stimmung der Welt etabliert. Nutze was du über die Charaktere weißt um die Szene
 auf sie zuzuschneiden.
 
-**Session 0 abschließen:** Spieler sagen `session 0 abschließen`
+**Session 0 abschließen:** Admin schickt `!save`
 
 Dann:
 1. Fasse Welt, Konflikt und Ausgangssituation zusammen
@@ -121,7 +121,7 @@ Skills beeinflussen die Wertung:
 
 ## Pausen
 
-Spieler sagen `pause`:
+Admin schickt `!save`:
 1. Beende die Szene an einem sinnvollen Punkt
 2. Schreibe einen kurzen "Bisher in unserem Abenteuer..." Block
 3. Aktualisiere `session.yaml`

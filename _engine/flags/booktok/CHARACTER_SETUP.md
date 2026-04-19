@@ -156,7 +156,7 @@ charakter:
   geheimnis: "Sie weiß wo er ist. Hat ihn nie kontaktiert."
   schwachstelle: "Jemand der sie braucht — sie kann nicht nein sagen"
   widerspruch: "Stößt alle weg, kann Einsamkeit nicht ertragen"
-  erster_gedanke_über_char2: "[aus Spieler-Antwort]"
+  feind: "[erster Gedanke über den Feind/Love Interest — aus Spieler-Antwort]"
 
 dm_hebel:
   - "Der Bruder existiert — kann als NSC auftauchen"

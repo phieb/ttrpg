@@ -11,27 +11,35 @@ Ein D20 für alles, keine Würfelmechanik-Bürokratie, dafür gute Geschichten.
 
 ```
 ttrpg/
-├── _engine/                          ← nie anfassen, immer gleich
-│   ├── DUNGEON_MASTER.md             ← die DM-Logik (Kern des Systems)
-│   ├── templates/                    ← Vorlagen für neue Abenteuer
+├── _engine/
+│   ├── DUNGEON_MASTER.md        ← DM-Logik (reguläres Spiel + Session 0)
+│   ├── CHARACTER_SETUP.md       ← privater 1:1 Charakter-Setup Kanal
+│   ├── TOP_DM_REGELN.md         ← Kernregeln (immer geladen)
+│   ├── templates/               ← Vorlagen für neue Abenteuer
 │   │   ├── character.yaml
 │   │   ├── setting.yaml
 │   │   ├── npcs.yaml
 │   │   └── session.yaml
+│   ├── flags/                   ← ein Unterordner pro Flag
+│   │   ├── mature_content/
+│   │   ├── booktok/
+│   │   ├── fantasy/
+│   │   ├── mythical/
+│   │   └── historical/
 │   └── tools/
-│       └── generate_character_pdf.py ← Charakterblatt PDFs + Gemini Prompts
+│       └── generate_character_pdf.py
+├── players/                     ← ein YAML pro registriertem Spieler
+├── status.yaml                  ← Abenteuer-Übersicht + Signal-Gruppen
+├── status.example.yaml
 └── adventures/
-    ├── _template/                    ← Vorlage (wird automatisch von Claude genutzt)
-    │   └── CLAUDE.md
-    └── [abenteuer-name]/             ← ein Ordner pro Abenteuer
-        ├── CLAUDE.md
-        ├── setting.yaml
+    └── [abenteuer-name]/
+        ├── setting.yaml         ← Welt, Flags, verfuegbare_spezies
         ├── npcs.yaml
         ├── session.yaml
+        ├── spielprotokoll.jsonl
         └── characters/
             ├── [name].yaml
-            ├── [name]_charakterblatt.pdf
-            └── [name]_portrait_prompt.txt
+            └── [name]_avatar.png
 ```
 
 ## Spielen

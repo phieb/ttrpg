@@ -1,0 +1,28 @@
+fields:
+  - key: arc.wunde
+    required: true
+    detail: full
+
+  - key: arc.trieb
+    required: true
+    detail: full
+
+  - key: arc.unvergebenes
+    required: false
+    detail: full
+
+  - key: arc.schwachstelle
+    required: true
+    detail: full
+
+  - key: arc.widerspruch
+    required: true
+    detail: full
+
+  - key: dm_hebel
+    required: false
+    detail: full
+
+  - key: beziehungen.feind
+    required: false
+    detail: full
