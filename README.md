@@ -36,7 +36,7 @@ ttrpg/
 │   │   ├── fantasy/
 │   │   ├── mythical/
 │   │   └── historical/
-│   │   # Addons (z.B. ttrpg-flavour-horror) werden via Docker-Volume hier eingehängt
+│   │   # Addons werden via Docker-Volume hier eingehängt
 │   └── tools/
 │       └── generate_character_pdf.py
 ├── players/                     ← ein YAML pro registriertem Spieler
@@ -52,6 +52,14 @@ ttrpg/
             ├── [name].yaml
             └── [name]_avatar.png
 ```
+
+## Flavour Addons
+
+| Addon | Inhalt |
+|-------|--------|
+| [ttrpg-flavour-horror](https://github.com/phieb/ttrpg-flavour-horror) | Kosmisches Grauen, Verstand-Mechanik, Safety Tools |
+
+Wie du ein eigenes Addon baust: siehe [ttrpg-flavour-horror/README.md](https://github.com/phieb/ttrpg-flavour-horror#eigenes-addon-bauen).
 
 ## Spielen
 
