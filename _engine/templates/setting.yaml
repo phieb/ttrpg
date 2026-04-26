@@ -30,6 +30,12 @@ aktuelle_lage: ""
 # Beispiel: ["Mensch", "Elf", "Vampir"]
 verfuegbare_spezies: []
 
+# ── Sprache ────────────────────────────────────────────────────────────────────
+# Bestimmt welche Sprachversion der Engine-Prompts geladen wird.
+# Wenn _engine/{language}/DUNGEON_MASTER.md existiert, wird sie bevorzugt.
+# Fallback: _engine/DUNGEON_MASTER.md (Deutsch)
+language: de   # de | en | fr | ...
+
 # ── Flavours ───────────────────────────────────────────────────────────────────
 # Schalten bestimmtes DM-Verhalten an oder aus.
 # Nur setzen wenn die Gruppe das explizit möchte.
