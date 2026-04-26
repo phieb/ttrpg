@@ -25,13 +25,17 @@ startort:
 aktuelle_lage: ""
 
 # ── Spezies ────────────────────────────────────────────────────────────────────
-# Optional — überschreibt die Spezies-Liste der aktiven Flags.
-# Leer lassen um die Flag-Defaults zu verwenden.
+# Optional — überschreibt die Spezies-Liste der aktiven Flavours.
+# Leer lassen um die Flavour-Defaults zu verwenden.
 # Beispiel: ["Mensch", "Elf", "Vampir"]
 verfuegbare_spezies: []
 
-# ── Flags ──────────────────────────────────────────────────────────────────────
+# ── Flavours ───────────────────────────────────────────────────────────────────
 # Schalten bestimmtes DM-Verhalten an oder aus.
 # Nur setzen wenn die Gruppe das explizit möchte.
-flags:
-  mature_content: false  # true → explizite Gewalt, Dunkelheit, Erwachsenenthemen erlaubt
+flavours:
+  booktok: false    # true → Dark Romance Charakterbau + Atmosphäre
+  fantasy: false    # true → Elf, Zwerg, Hexe, Halbblut als Spezies verfügbar
+  mythical: false   # true → Vampir, Werwolf, Nymphe, Shapeshifter als Spezies verfügbar
+  historical: false # true → Historisches Setting, nur Mensch, Stand/Herkunft statt Spezies
+  # mature wird automatisch aktiviert wenn booktok aktiv ist

@@ -117,7 +117,9 @@ Wenn alle Infos vollständig sind:
 2. Generiere einen Imagen-Prompt für das Portrait (in imagen_prompt speichern)
 3. Schreibe: *"Dein Charakter ist bereit. Sobald alle Spieler fertig sind,
    geht es in der Gruppe weiter — ich melde mich."*
-4. Setze den Spieler-Status auf `ready` (System-Signal an den Bot)
+4. Schreibe auf einer eigenen Zeile am Ende deiner Nachricht exakt: `[SETUP_COMPLETE]`
+   Dieser Marker wird vom Bot erkannt und automatisch entfernt bevor die Nachricht
+   den Spieler erreicht. Er signalisiert dem System dass dieser Spieler bereit ist.
 
 ---
 

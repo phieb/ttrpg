@@ -59,14 +59,7 @@ ttrpg/
 │   │   ├── setting.yaml
 │   │   ├── npcs.yaml
 │   │   └── session.yaml
-│   └── flags/
-│       ├── mature_content/
-│       │   ├── DUNGEON_MASTER.md
-│       │   └── CHARACTER_SETUP.md
-│       ├── booktok/
-│       │   ├── DUNGEON_MASTER.md
-│       │   ├── CHARACTER_SETUP.md
-│       │   └── CONTENT_PREFERENCES.md
+│   └── flavours/                   # built-in only — addons are mounted here via Docker
 │       ├── fantasy/
 │       │   └── CHARACTER_SETUP.md    # human, elf, dwarf, halfblood, witch/warlock
 │       ├── mythical/
@@ -79,7 +72,7 @@ ttrpg/
 ├── status.example.yaml
 └── adventures/
     └── [adventure-name]/
-        ├── setting.yaml          # World, atmosphere, flags, verfuegbare_spezies
+        ├── setting.yaml          # World, atmosphere, flavours, verfuegbare_spezies
         ├── session.yaml          # Current state, quest backlog
         ├── npcs.yaml
         ├── spielprotokoll.jsonl  # Crash-safe log, cleared on !save
@@ -90,23 +83,34 @@ ttrpg/
 
 ---
 
-## 3. Flag System
+## 3. Flavour System
 
-Flags are set in `setting.yaml` at `!new` time:
+Flavours are set in `setting.yaml` at `!new` time via `--flavour` flags:
 
 ```yaml
-flags:
-  - mature_content
-  - booktok
-  - fantasy        # or: mythical, historical
+flavours:
+  booktok: true
+  fantasy: true   # or: mythical, historical
 ```
 
-The bot loads `_engine/flags/[flag]/[PHASE].md` for each active flag when building the system prompt for that phase. If no file exists for a flag+phase combination, it's silently skipped.
+The bot loads `_engine/flavours/[flavour]/[PHASE].md` for each active flavour when building
+the system prompt for that phase. If no file exists for a flavour+phase combination, it is
+silently skipped.
 
-### Species flags
+Each flavour can have an optional `manifest.yaml` declaring dependencies:
+```yaml
+description: "Human-readable description shown by !flavours"
+requires:
+  - other-flavour
+```
 
-| Flag | Available species |
-|------|------------------|
+**Addons:** drop any flavour folder into `_engine/flavours/` via a Docker volume mount —
+the bot picks it up automatically. No registration or code change needed.
+
+### Species flavours
+
+| Flavour | Available species |
+|---------|------------------|
 | `fantasy` | human, elf, dwarf, halfblood, witch/warlock |
 | `mythical` | human, vampire, werewolf, nymph/fae, shapeshifter |
 | `historical` | human only (species replaced by stand/herkunft) |
@@ -114,7 +118,7 @@ The bot loads `_engine/flags/[flag]/[PHASE].md` for each active flag when buildi
 
 `verfuegbare_spezies` in `setting.yaml` overrides all of the above with a custom list.
 
-`booktok` stays human-only unless a species flag is also active.
+`booktok` stays human-only unless a species flavour is also active.
 
 ---
 
@@ -148,9 +152,7 @@ zustand:
 praeferenzen:
   no_gos: []
   wishes: []
-  # mature_content_grenzen: []
-  # booktok_no_gos: []
-  # booktok_wishes: []
+  # [addon-specific fields appear here when an addon flavour is active]
 imagen_prompt: ""
 ```
 
