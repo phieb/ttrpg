@@ -59,7 +59,7 @@ ttrpg/
 |-------|--------|
 | [ttrpg-flavour-horror](https://github.com/phieb/ttrpg-flavour-horror) | Kosmisches Grauen, Verstand-Mechanik, Safety Tools |
 
-Wie du ein eigenes Addon baust: siehe [ttrpg-flavour-horror/README.md](https://github.com/phieb/ttrpg-flavour-horror#eigenes-addon-bauen).
+Wie du ein eigenes Addon baust: siehe [_engine/ARCHITECTURE.md](/_engine/ARCHITECTURE.md#addon-bauen).
 
 ## Spielen
 

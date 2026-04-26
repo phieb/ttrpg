@@ -107,6 +107,46 @@ requires:
 **Addons:** drop any flavour folder into `_engine/flavours/` via a Docker volume mount —
 the bot picks it up automatically. No registration or code change needed.
 
+### Addon bauen
+
+Ein Addon ist ein eigenes Git-Repo mit einem `flavours/` Ordner. Jeder Flavour darin
+ist ein Unterordner mit optionalen Dateien je nach Phase:
+
+```
+mein-addon/
+  flavours/
+    mein-flavour/
+      DUNGEON_MASTER.md       ← in DM-System-Prompt injiziert
+      CHARACTER_SETUP.md      ← injiziert während Charaktererstellung
+      SESSION_ZERO.md         ← injiziert während Session Zero
+      CONTENT_PREFERENCES.md  ← injiziert bei Content-Präferenz-Fragen
+      CHARACTER_FIELDS.yaml   ← zusätzliche Charakterblatt-Felder
+      manifest.yaml           ← Beschreibung + requires
+```
+
+**`manifest.yaml`:**
+```yaml
+description: "Kurze Beschreibung — erscheint bei !flavours"
+requires:
+  - anderer-flavour   # wird automatisch aktiviert wenn dieser Flavour aktiv ist
+```
+
+**`CHARACTER_FIELDS.yaml`:**
+```yaml
+fields:
+  - key: zustand.mein_feld
+    required: false     # true = Pflichtfeld für vollständiges Charakterblatt
+    detail: full        # full = Wert wird exakt übernommen, nicht zusammengefasst
+```
+
+**Docker einbinden** (in `docker-compose.yml` von ttrpg-signal):
+```yaml
+volumes:
+  - /pfad/zu/mein-addon/flavours/mein-flavour:/mnt/ttrpg/_engine/flavours/mein-flavour
+```
+
+Referenzimplementierung: [ttrpg-flavour-horror](https://github.com/phieb/ttrpg-flavour-horror)
+
 ### Species flavours
 
 | Flavour | Available species |
