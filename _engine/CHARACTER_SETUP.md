@@ -117,10 +117,11 @@ Wenn alle Infos vollständig sind:
 2. Generiere einen Imagen-Prompt für das Portrait (in imagen_prompt speichern)
 3. Schreibe: *"Dein Charakter ist bereit. Sobald alle Spieler fertig sind,
    geht es in der Gruppe weiter — ich melde mich."*
-4. **Signal-Bot Modus:** Schreibe auf einer eigenen Zeile am Ende exakt: `[SETUP_COMPLETE]`
-   Der Bot erkennt und entfernt diesen Marker automatisch — der Spieler sieht ihn nicht.
-   **Claude Code Modus:** Kein Marker nötig — fahre direkt mit dem nächsten Spieler fort
-   oder wechsle zu Session 0 wenn alle fertig sind.
+4. Schreibe auf einer eigenen Zeile am Ende exakt: `[SETUP_COMPLETE]`
+   Dieser Marker signalisiert dem System dass der Charakter fertig ist.
+   Im Signal-Bot Modus wird er automatisch entfernt bevor die Nachricht den Spieler erreicht.
+   Im Claude Code Modus ist er das Signal um zum nächsten Spieler weiterzugehen
+   oder — wenn alle fertig sind — Session 0 zu starten.
 
 ---
 

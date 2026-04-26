@@ -46,7 +46,8 @@ Wenn `status.yaml` leer ist oder keine Einträge hat, zeige nur "Neues Abenteuer
 5. Kopiere Templates aus `_engine/templates/` nach `adventures/[name]/`
 6. Trage das neue Abenteuer in `status.yaml` ein (status: setup, spieler-Liste mit Namen)
 7. Starte Charakter-Setup per `_engine/CHARACTER_SETUP.md` — einen Spieler nach dem anderen
-8. Wenn alle Charaktere fertig: status → session_0, lies `_engine/DUNGEON_MASTER.md`, starte Session 0
+   Wenn du `[SETUP_COMPLETE]` schreibst: Charakter speichern, nächsten Spieler starten
+8. Wenn alle `[SETUP_COMPLETE]` haben: status → session_0, lies `_engine/DUNGEON_MASTER.md`, starte Session 0
 
 **Spieler will einen neuen Spieler registrieren:**
 1. Frage nach dem Namen
