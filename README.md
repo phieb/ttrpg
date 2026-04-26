@@ -15,7 +15,7 @@ Einfach dieses Repo in Claude Code öffnen. Claude liest `CLAUDE.md` und zeigt s
 **Mit dem Signal-Bot** — asynchron über Signal auf dem Smartphone:
 [phieb/ttrpg-signal](https://github.com/phieb/ttrpg-signal) läuft als Docker-Dienst, bindet dieses Repo ein und routet Signal-Nachrichten an die DM-Engine. Spieler schreiben in eine Signal-Gruppe, der Bot antwortet als DM.
 
-Beide Modi nutzen dieselben Engine-Dateien, dieselben Abenteuer-Ordner und dieselben Charakterblätter. Der einzige Unterschied: `players/[name].yaml` braucht ein `telefon`-Feld nur wenn der Bot genutzt wird.
+Beide Modi nutzen dieselben Engine-Dateien, dieselben Abenteuer-Ordner und dieselben Charakterblätter. Der einzige Unterschied: `players/[name].yaml` braucht nur ein Telefonfeld, wenn der Bot genutzt wird.
 
 ---
 
