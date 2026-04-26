@@ -1,4 +1,4 @@
 spieler:
   name: "MaxMustermann"       # Anzeigename (muss zu status.yaml passen)
-  rolle: spieler              # spieler | dm
+  rolle: spieler
   # telefon: "+43123456789"   # Signal-Nummer — nur nötig wenn der Signal-Bot genutzt wird

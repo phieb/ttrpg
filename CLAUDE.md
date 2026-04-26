@@ -49,12 +49,12 @@ Wenn `status.yaml` leer ist oder keine Einträge hat, zeige nur "Neues Abenteuer
 8. Wenn alle Charaktere fertig: status → session_0, lies `_engine/DUNGEON_MASTER.md`, starte Session 0
 
 **Spieler will einen neuen Spieler registrieren:**
-1. Frage nach Name und Rolle (spieler / dm)
+1. Frage nach dem Namen
 2. Lege `players/[name].yaml` an:
    ```yaml
    spieler:
      name: "Name"
-     rolle: spieler   # spieler | dm
+     rolle: spieler
      # telefon: "+43..."  # nur nötig wenn der Signal-Bot genutzt wird
    ```
 3. Bestätige — der Spieler kann ab sofort in Abenteuern verwendet werden
