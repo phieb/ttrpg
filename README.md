@@ -7,6 +7,18 @@ Ein D20 für alles, keine Würfelmechanik-Bürokratie, dafür gute Geschichten.
 > Der dazugehörige Signal-Bot (Routing, Claude API, Avatar-Generierung) liegt in
 > [phieb/ttrpg-signal](https://github.com/phieb/ttrpg-signal).
 
+## Zwei Spielmodi
+
+**Direkt mit Claude Code** — kein Bot, kein Server, kein Setup:
+Einfach dieses Repo in Claude Code öffnen. Claude liest `CLAUDE.md` und zeigt sofort ein Menü — laufende Abenteuer, neues Abenteuer starten, Spieler registrieren. Alles läuft in der Konversation.
+
+**Mit dem Signal-Bot** — asynchron über Signal auf dem Smartphone:
+[phieb/ttrpg-signal](https://github.com/phieb/ttrpg-signal) läuft als Docker-Dienst, bindet dieses Repo ein und routet Signal-Nachrichten an die DM-Engine. Spieler schreiben in eine Signal-Gruppe, der Bot antwortet als DM.
+
+Beide Modi nutzen dieselben Engine-Dateien, dieselben Abenteuer-Ordner und dieselben Charakterblätter. Der einzige Unterschied: `players/[name].yaml` braucht ein `telefon`-Feld nur wenn der Bot genutzt wird.
+
+---
+
 ## Struktur
 
 ```
