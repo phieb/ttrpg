@@ -36,7 +36,7 @@ ttrpg/
 │   │   ├── fantasy/
 │   │   ├── mythical/
 │   │   └── historical/
-│   │   # Addons (z.B. ttrpg-adult) werden via Docker-Volume hier eingehängt
+│   │   # Addons (z.B. ttrpg-flavour-horror) werden via Docker-Volume hier eingehängt
 │   └── tools/
 │       └── generate_character_pdf.py
 ├── players/                     ← ein YAML pro registriertem Spieler
