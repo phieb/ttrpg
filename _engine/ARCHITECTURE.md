@@ -20,9 +20,9 @@ Each player gets a dedicated 2-member Signal group (bot + player) per adventure.
 **Flow:**
 1. `!new` creates the play group + one private setup group per player
 2. Bot sends opening message via `CHARACTER_SETUP.md`
-3. Species question (if species flag active or `verfuegbare_spezies` set in setting.yaml)
+3. Species question (if species flavour active or `verfuegbare_spezies` set in setting.yaml)
 4. Character development questions (one at a time)
-5. Content preferences: no-gos always, wishes always, flag-extended if applicable
+5. Content preferences: no-gos always, wishes always, flavour-extended if applicable
 6. Player signals ready → bot extracts character data → generates avatar
 7. When all players ready → adventure moves to `session_0`
 
@@ -85,7 +85,7 @@ ttrpg/
 
 ## 3. Flavour System
 
-Flavours are set in `setting.yaml` at `!new` time via `--flavour` flags:
+Flavours are set in `setting.yaml` at `!new` time via `--flavour`:
 
 ```yaml
 flavours:
@@ -203,6 +203,6 @@ spieler:
 ## 7. Open / Planned
 
 - Private player→DM command during active play
-- Trigger warnings as configurable template (default vs flag-specific)
+- Trigger warnings as configurable template (default vs flavour-specific)
 - Epilogue / adventure conclusion flow
 - How a second player joins a scene already in progress

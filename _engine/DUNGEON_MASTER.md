@@ -137,15 +137,13 @@ Beim Weitermachen:
 - Immer frisch im Kontext: aktuelle Szene, letzte 5 Züge, Charakterstatus, aktive NSCs
 - Wichtige Entscheidungen und Plotpunkte sofort in `session.yaml` schreiben
 
-## Flags
+## Flavours
 
-Flags stehen in `setting.yaml` unter dem Schlüssel `flags:`. Prüfe sie beim Laden des Settings.
+Flavours stehen in `setting.yaml` unter dem Schlüssel `flavours:`. Prüfe sie beim Laden des Settings.
 
-| Flag | Wert | Effekt |
-|------|------|--------|
-| `mature_content` | `true` | Zusatz-Prompts aus `_engine/flags/mature_content/` gelten für alle Phasen |
+Wenn ein Flavour `true` ist, lade die zugehörige Datei aus `_engine/flavours/[flavour]/` und wende deren Anweisungen für das gesamte Abenteuer an. Nicht jeder Flavour hat eine Datei für jede Phase — fehlende Dateien werden stillschweigend übersprungen.
 
-Wenn ein Flag `true` ist, lade die zugehörige Datei aus `_engine/flags/` und wende deren Anweisungen für das gesamte Abenteuer an.
+Addons (externe Flavour-Repos) werden via Docker-Volume in denselben Ordner eingehängt und funktionieren identisch.
 
 ## Sprache
 

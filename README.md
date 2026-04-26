@@ -20,12 +20,11 @@ ttrpg/
 │   │   ├── setting.yaml
 │   │   ├── npcs.yaml
 │   │   └── session.yaml
-│   ├── flags/                   ← ein Unterordner pro Flag
-│   │   ├── mature_content/
-│   │   ├── booktok/
+│   ├── flavours/                ← ein Unterordner pro Flavour (built-in)
 │   │   ├── fantasy/
 │   │   ├── mythical/
 │   │   └── historical/
+│   │   # Addons (z.B. ttrpg-adult) werden via Docker-Volume hier eingehängt
 │   └── tools/
 │       └── generate_character_pdf.py
 ├── players/                     ← ein YAML pro registriertem Spieler
@@ -33,7 +32,7 @@ ttrpg/
 ├── status.example.yaml
 └── adventures/
     └── [abenteuer-name]/
-        ├── setting.yaml         ← Welt, Flags, verfuegbare_spezies
+        ├── setting.yaml         ← Welt, Flavours, verfuegbare_spezies
         ├── npcs.yaml
         ├── session.yaml
         ├── spielprotokoll.jsonl
